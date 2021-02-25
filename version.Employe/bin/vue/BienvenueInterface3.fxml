@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="714.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BienvenueController">
+   <children>
+      <Pane layoutX="62.0" layoutY="50.0" prefHeight="519.0" prefWidth="593.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="89.0" layoutY="51.0" prefHeight="50.0" prefWidth="245.0" text="Bienvenue " textFill="#5c9e48">
+               <font>
+                  <Font name="Brush Script MT Italic" size="54.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="conge" layoutX="71.0" layoutY="351.0" onAction="#choixConge" prefHeight="42.0" prefWidth="162.0" promptText="Demander un conge" />
+            <ComboBox fx:id="info" layoutX="349.0" layoutY="351.0" onAction="#choixInfo" prefHeight="42.0" prefWidth="150.0" promptText="Info Personnelle" />
+            <ImageView fitHeight="192.0" fitWidth="369.0" layoutX="178.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../pfe/the-impact-of-social-media-on-enterprise-apps-600__w630.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="64.0" layoutX="472.0" layoutY="33.0" onMouseClicked="#afficherMessage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../pfe/dd.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="message" layoutX="506.0" layoutY="39.0" prefHeight="25.0" prefWidth="46.0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

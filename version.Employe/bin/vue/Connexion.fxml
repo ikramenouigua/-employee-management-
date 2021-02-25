@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="639.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConnexionController">
+   <children>
+      <Pane layoutX="58.0" layoutY="43.0" prefHeight="477.0" prefWidth="495.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="textEmail" layoutX="245.0" layoutY="267.0" prefHeight="25.0" prefWidth="167.0" />
+            <Button layoutX="251.0" layoutY="414.0" mnemonicParsing="false" onAction="#seConnecter" prefHeight="37.0" prefWidth="161.0" style="-fx-background-color: #00FFFF; -fx-background-radius: 20;" text="se connecter">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="270.0" prefHeight="17.0" prefWidth="131.0" text="Email :">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="314.0" prefHeight="17.0" prefWidth="105.0" text="Mot de passe :">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="363.0" onMouseClicked="#inscrivezVous" prefHeight="31.0" prefWidth="300.0" text="Inscrivez-vous si vous n'avez pas de compte" textFill="#26aea1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="textMotdepasse" layoutX="245.0" layoutY="311.0" prefHeight="25.0" prefWidth="167.0" />
+            <Label layoutX="63.0" layoutY="47.0" prefHeight="36.0" prefWidth="352.0" text="Application de gestion des employes" textFill="#312c9e">
+               <font>
+                  <Font name="Brush Script MT Italic" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="341.0" layoutX="75.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../pfe/employees-crop-1024x423.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

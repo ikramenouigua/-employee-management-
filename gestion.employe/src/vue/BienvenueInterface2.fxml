@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import controller.ControllerBienvenue.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="736.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerBienvenue">
+   <children>
+      <Pane layoutX="40.0" layoutY="31.0" prefHeight="502.0" prefWidth="637.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" prefHeight="46.0" prefWidth="325.0" text="Bienvenue" textFill="#705dd7">
+               <font>
+                  <Font name="Agency FB" size="63.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="employe" layoutX="14.0" layoutY="333.0" onAction="#choixEmploye" prefHeight="42.0" prefWidth="150.0" promptText="                Gestion" style="-fx-background-color: yellow;" />
+            <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="14.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../pfe/l-ic-ne-de-gestion-et-de-travail-d-équipe-équipe-et-groupe-travail-d-équipe-les-gens-alliance-symbole-de-gestion-ui-web-logo-80142953.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="185.0" fitWidth="433.0" layoutX="200.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../pfe/the-impact-of-social-media-on-enterprise-apps-600__w630.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="67.0" layoutX="479.0" layoutY="19.0" onMouseClicked="#afficherMessage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../pfe/dd.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="message" layoutX="516.0" layoutY="19.0" prefHeight="25.0" prefWidth="59.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

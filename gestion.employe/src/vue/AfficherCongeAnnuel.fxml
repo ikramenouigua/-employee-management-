@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="842.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.AfficherCongeAnnuelController">
+   <content>
+      <Pane prefHeight="598.0" prefWidth="821.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="table" layoutX="7.0" layoutY="284.0" prefHeight="200.0" prefWidth="769.0">
+              <columns>
+                <TableColumn fx:id="matricule" prefWidth="90.0" text="Matricule " />
+                <TableColumn fx:id="numeroContrat" prefWidth="105.0" text="Numero Contrat" />
+                  <TableColumn fx:id="nom" minWidth="0.0" prefWidth="59.0" text="Nom" />
+                  <TableColumn fx:id="prenom" prefWidth="87.0" text="Prenom" />
+                  <TableColumn fx:id="departement" minWidth="5.0" prefWidth="104.0" text="Departement" />
+                  <TableColumn fx:id="poste" minWidth="0.0" text="Poste" />
+                  <TableColumn fx:id="dateDebut" minWidth="0.0" prefWidth="93.0" text="Date Debut" />
+                  <TableColumn fx:id="dateFin" minWidth="0.0" prefWidth="76.0" text="Date Fin" />
+                  <TableColumn fx:id="etat" minWidth="0.0" prefWidth="74.0" text="Etat" />
+              </columns>
+            </TableView>
+            <TextField fx:id="filtrerField" layoutX="366.0" layoutY="232.0" onKeyReleased="#search" prefHeight="25.0" prefWidth="207.0" style="-fx-background-radius: 20;" />
+            <Label layoutX="22.0" layoutY="230.0" prefHeight="28.0" prefWidth="286.0" text="Entrez departement ou date de conge" textFill="#795e23">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="126.0" fitWidth="195.0" layoutX="34.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../pfe/fiche-pratiques-img-default@w_720.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="choix" layoutY="2.0" onAction="#choixUtilisateur" prefWidth="150.0" promptText="Compte" />
+            <Label layoutX="317.0" layoutY="99.0" prefHeight="34.0" prefWidth="229.0" text="Conge Annuel" textFill="#2c6534">
+               <font>
+                  <Font name="Brush Script MT Italic" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

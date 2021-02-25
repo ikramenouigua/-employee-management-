@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1014.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CongeMaladieController">
+   <content>
+      <SplitPane dividerPositions="0.4431578947368421" orientation="VERTICAL" prefHeight="952.0" prefWidth="944.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="942.0">
+               <children>
+                  <TableView fx:id="table" layoutX="35.0" layoutY="153.0" onMouseClicked="#selectionnee" prefHeight="200.0" prefWidth="873.0">
+                    <columns>
+                      <TableColumn fx:id="matricule" prefWidth="75.0" text="Matricule" />
+                      <TableColumn fx:id="idContrat" prefWidth="75.0" text="N Contrat" />
+                        <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+                        <TableColumn fx:id="prenom" prefWidth="75.0" text="Prenom" />
+                        <TableColumn fx:id="departement" prefWidth="75.0" text="Departement" />
+                        <TableColumn fx:id="poste" prefWidth="75.0" text="Poste" />
+                        <TableColumn fx:id="dateDebut" prefWidth="75.0" text="Date Debut" />
+                        <TableColumn fx:id="dateFin" prefWidth="75.0" text="Date Fin" />
+                        <TableColumn fx:id="etat" prefWidth="75.0" text="Etat" />
+                        <TableColumn fx:id="resultat" prefWidth="75.0" text="resultat" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="289.0" layoutY="65.0" prefHeight="44.0" prefWidth="446.0" text="Les demandes de conge maladie :" textFill="#2fb6c3">
+                     <font>
+                        <Font name="Brush Script MT Italic" size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="115.0" fitWidth="160.0" layoutX="137.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../pfe/xc.PNG" />
+                     </image>
+                  </ImageView>
+                  <ComboBox fx:id="choix" layoutY="2.0" onAction="#choixUtilisateur" prefWidth="150.0" promptText="compte" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="942.0">
+               <children>
+                  <SplitPane dividerPositions="0.5182012847965739" layoutX="13.0" layoutY="60.0" prefHeight="519.0" prefWidth="936.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="479.0">
+                           <children>
+                              <GridPane layoutX="26.0" layoutY="130.0" prefHeight="306.0" prefWidth="408.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="138.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="270.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="113.0" text="Matricule :">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="126.0" text="Numero Contrat :" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="122.0" text="Nom :" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="103.0" text="Prenom :" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="117.0" text="Departement :" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="108.0" text="Poste :" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="111.0" text="Date Debut :" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="113.0" text="Date Fin :" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="124.0" text="Etat :" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="119.0" text="Resultat :" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textMatricule" style="-fx-background-radius: 20;" GridPane.columnIndex="1" />
+                                    <TextField fx:id="textContrat" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="textNom" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <TextField fx:id="textPrenom" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <TextField fx:id="textDepartement" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <TextField fx:id="textPoste" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <DatePicker fx:id="textDebut" prefHeight="25.0" prefWidth="271.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <DatePicker fx:id="textFin" prefHeight="25.0" prefWidth="295.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <ComboBox fx:id="textEtat" prefHeight="25.0" prefWidth="325.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <ComboBox fx:id="textResultat" prefHeight="25.0" prefWidth="353.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                 </children>
+                              </GridPane>
+                              <Label layoutX="166.0" layoutY="25.0" prefHeight="57.0" prefWidth="238.0" text="Conge Maladie :" textFill="#608665">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="106.0" fitWidth="135.0" layoutX="28.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../pfe/vc.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="451.0">
+                           <children>
+                              <Label layoutX="31.0" layoutY="55.0" prefHeight="17.0" prefWidth="132.0" text="Certificat Medical :">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="imageView" fitHeight="186.0" fitWidth="282.0" layoutX="97.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button layoutX="220.0" layoutY="385.0" mnemonicParsing="false" onAction="#enregistrer" prefHeight="44.0" prefWidth="162.0" style="-fx-background-radius: 20; -fx-background-color: #00BFFF;" text="Valider">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </content>
+</ScrollPane>

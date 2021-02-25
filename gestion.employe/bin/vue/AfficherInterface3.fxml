@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1472.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GestionController">
+   <content>
+      <SplitPane dividerPositions="0.6918429003021148" orientation="VERTICAL" prefHeight="1470.0" prefWidth="906.0">
+        <items>
+          <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="804.0" prefWidth="846.0">
+               <children>
+                  <SplitPane dividerPositions="0.5050505050505051" layoutX="20.0" layoutY="93.0" prefHeight="724.0" prefWidth="767.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="625.0" prefWidth="383.0">
+                           <children>
+                              <GridPane layoutX="17.0" layoutY="300.0" prefHeight="391.0" prefWidth="355.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="135.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="230.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="88.0" text="  Matricule :">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="89.0" text="  Nom :" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="95.0" text="  Prenom :" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="103.0" text="  CIN :" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="89.0" text="  Nationalite :" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="101.0" text="  Ville :" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="74.0" text="  Addresse :" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="99.0" text="  Telephone :" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="17.0" prefWidth="89.0" text="  Email :" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="matricule" style="-fx-background-radius: 20;" GridPane.columnIndex="1" />
+                                    <TextField fx:id="nom" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="prenom" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <TextField fx:id="cin" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <TextField fx:id="addresse" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <TextField fx:id="telephone" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <TextField fx:id="email" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <ComboBox fx:id="ville" prefHeight="25.0" prefWidth="246.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <ComboBox fx:id="nationalite" prefHeight="25.0" prefWidth="228.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                 </children>
+                              </GridPane>
+                              <Label layoutX="104.0" layoutY="14.0" prefHeight="45.0" prefWidth="170.0" text="Contact  :" textFill="#d01720">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="60.0" fitWidth="53.0" layoutX="33.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../pfe/index.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="151.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button layoutX="10.0" layoutY="244.0" mnemonicParsing="false" onAction="#parcourir" prefHeight="30.0" prefWidth="127.0" text="Parcourir">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.36428571428571427" layoutX="1.0" layoutY="1.0" orientation="VERTICAL" prefHeight="699.0" prefWidth="379.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <GridPane layoutX="10.0" layoutY="101.0" prefHeight="132.0" prefWidth="372.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="139.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="232.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="125.0" text="  Sexe :">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="110.0" text="Date Naissance :" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="70.0" text="  Statut :" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="sexe" prefHeight="25.0" prefWidth="220.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" />
+                                                <ComboBox fx:id="statut" prefHeight="25.0" prefWidth="224.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <DatePicker fx:id="dateNaiss" prefHeight="25.0" prefWidth="222.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                             </children>
+                                          </GridPane>
+                                          <Label layoutX="118.0" layoutY="22.0" prefHeight="38.0" prefWidth="171.0" text="Information Personnel :" textFill="#dd3e3e">
+                                             <font>
+                                                <Font name="System Bold Italic" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="64.0" fitWidth="79.0" layoutX="39.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../pfe/index1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="377.0">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="95.0" prefHeight="278.0" prefWidth="370.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="138.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="230.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="129.0" text="  Numero Contrat :">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="124.0" text="Matricule employe :" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="121.0" text="  Date debut :" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="106.0" text="  Date Fin :" GridPane.rowIndex="3">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="108.0" text=" Poste :" GridPane.rowIndex="5">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="80.0" text="  Salaire  :" GridPane.rowIndex="7">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="idContrat" style="-fx-background-radius: 20;" GridPane.columnIndex="1" />
+                                                <TextField fx:id="mat" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField fx:id="diplome" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <TextField fx:id="poste" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <TextField fx:id="salaire" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                <DatePicker fx:id="dateDeb" prefHeight="25.0" prefWidth="238.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <DatePicker fx:id="dateFin" prefHeight="25.0" prefWidth="276.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <ComboBox fx:id="textDepartement" prefHeight="25.0" prefWidth="226.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label prefHeight="17.0" prefWidth="114.0" text="Departement :" GridPane.rowIndex="4">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="98.0" text="  Diplome :" GridPane.rowIndex="6">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="diplome" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                             </children>
+                                          </GridPane>
+                                          <Label layoutX="114.0" layoutY="24.0" prefHeight="36.0" prefWidth="150.0" text="Contrat :" textFill="#dd3535">
+                                             <font>
+                                                <Font name="System Bold Italic" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="69.0" fitWidth="92.0" layoutX="33.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../pfe/icône-ou-logo-de-signature-concept-d-accord-juridique-contrat-137953171.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Button layoutX="184.0" layoutY="838.0" mnemonicParsing="false" onAction="#initialiser" prefHeight="40.0" prefWidth="85.0" style="-fx-background-color: blue;" text="Nouveau" textFill="#e1d7a2">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Button>
+                  <Button layoutX="314.0" layoutY="838.0" mnemonicParsing="false" onAction="#supprimerEmploye" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: red;" text="Supprimer" textFill="#dff573">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="470.0" layoutY="838.0" mnemonicParsing="false" onAction="#modifierEmploye" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: yellow;" text="Modifier">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Button>
+                  <Button layoutX="598.0" layoutY="840.0" mnemonicParsing="false" onAction="#ajouterEmploye" prefHeight="37.0" prefWidth="89.0" style="-fx-background-color: green;" text="Enregistrer" textFill="#a7e1dc">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font></Button>
+                  <ComboBox fx:id="choix" layoutX="14.0" layoutY="2.0" onAction="#choixUser" prefHeight="25.0" prefWidth="142.0" promptText="compte" style="-fx-background-radius: 20;" />
+                  <Label layoutX="294.0" layoutY="39.0" prefHeight="17.0" prefWidth="278.0" text="Gestion Des employes " textFill="#53c309">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="496.0" prefWidth="904.0">
+               <children>
+                  <TableView fx:id="table" layoutX="6.0" layoutY="177.0" onMouseClicked="#getSelected" prefHeight="200.0" prefWidth="907.0">
+                    <columns>
+                      <TableColumn fx:id="Amatricule" prefWidth="75.0" style="-fx-background-radius: 20;" text="Matricule" />
+                      <TableColumn fx:id="Anom" prefWidth="75.0" text="Nom" />
+                        <TableColumn fx:id="Aprenom" prefWidth="75.0" text="Prenom" />
+                        <TableColumn fx:id="ACIN" prefWidth="75.0" text="CIN" />
+                        <TableColumn fx:id="Anationalite" prefWidth="75.0" text="Nationalite" />
+                        <TableColumn fx:id="Aville" prefWidth="75.0" text="Ville" />
+                        <TableColumn fx:id="Aaddresse" prefWidth="75.0" text="Adresse" />
+                        <TableColumn fx:id="Atelephone" prefWidth="75.0" text="Telephone" />
+                        <TableColumn fx:id="Aemail" prefWidth="75.0" text="Email" />
+                        <TableColumn fx:id="Asexe" prefWidth="75.0" text="Sexe" />
+                        <TableColumn fx:id="Adate" prefWidth="75.0" text="Date Naissance" />
+                        <TableColumn fx:id="Astatut" prefWidth="75.0" text="Statut" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="185.0" layoutY="49.0" prefHeight="17.0" prefWidth="185.0" text="Affichage des employes :" textFill="#da3f3f">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="140.0" prefHeight="20.0" prefWidth="312.0" text="Entrez la matricule d'employe ou le nom" textFill="#307533">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="filtrerField" layoutX="372.0" layoutY="136.0" onKeyReleased="#search" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 20;" />
+                  <ImageView fitHeight="84.0" fitWidth="106.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../pfe/v.PNG" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </content>
+</ScrollPane>
